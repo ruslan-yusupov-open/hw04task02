@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AppBar</string>
+    <string name="my_app">Мое приложение.</string>
+    <string name="title_activity_edit_text">EditText</string>
+    <string name="save">Сохранить</string>
+    <string name="main_page">Главная страница!</string>
+</resources>
