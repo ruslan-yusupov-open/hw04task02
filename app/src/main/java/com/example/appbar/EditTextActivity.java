@@ -1,5 +1,6 @@
 package com.example.appbar;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -63,11 +64,33 @@ public class EditTextActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        Context packageContext = this;
 
         int id = item.getItemId();
 
         if (id == R.id.action_main) {
-            Intent intentNotes = new Intent(EditTextActivity.this, MainActivity.class);
+            Intent intentNotes = new Intent(packageContext, MainActivity.class);
+            startActivity(intentNotes);
+            finish();
+            return true;
+        }
+
+        if (id == R.id.action_open_address) {
+            Intent intentNotes = new Intent(packageContext, AddressActivity.class);
+            startActivity(intentNotes);
+            finish();
+            return true;
+        }
+
+        if (id == R.id.action_open_calendar) {
+            Intent intentNotes = new Intent(packageContext, CalendarActivity.class);
+            startActivity(intentNotes);
+            finish();
+            return true;
+        }
+
+        if (id == R.id.action_open_payment) {
+            Intent intentNotes = new Intent(packageContext, PaymentActivity.class);
             startActivity(intentNotes);
             finish();
             return true;

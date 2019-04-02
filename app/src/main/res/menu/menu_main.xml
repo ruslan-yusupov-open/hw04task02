@@ -15,4 +15,22 @@
         android:orderInCategory="100"
         android:title="Записная книжка"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_open_payment"
+        android:orderInCategory="100"
+        android:title="Платежи"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_open_address"
+        android:orderInCategory="100"
+        android:title="Адрес"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_open_calendar"
+        android:orderInCategory="100"
+        android:title="Календарь"
+        app:showAsAction="never" />
 </menu>
